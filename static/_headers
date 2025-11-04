@@ -3,17 +3,9 @@
 /*
   X-Robots-Tag: googlebot: index, follow
 
-# 阻止搜索引擎索引图片，但允许在搜索结果中显示（如果它们被其他页面引用）
-/images/*
-  X-Robots-Tag: noimageindex
-
 # Cloudflare 用cdn-cgi网址替换了电子邮件地址
 /cdn-cgi/*
   X-Robots-Tag: noindex
-
-# -----------------------------------------------------------------
-# 添加的 noindex 规则 (Added noindex rules)
-# -----------------------------------------------------------------
 
 # 分类页面 (Categories Pages)
 /categories/
@@ -22,12 +14,3 @@
   X-Robots-Tag: noindex
 /ja/categories/
   X-Robots-Tag: noindex
-
-# -----------------------------------------------------------------
-# 新增：禁止抓取和索引 /en 和 /ja 目录
-# (New: Disallow crawling and indexing for /en and /ja directories)
-# -----------------------------------------------------------------
-/en/*
-  X-Robots-Tag: noindex, nofollow
-/ja/*
-  X-Robots-Tag: noindex, nofollow
